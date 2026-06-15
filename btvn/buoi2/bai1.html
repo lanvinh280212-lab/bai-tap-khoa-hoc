@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát</title>
+</head>
+<body>
+    <h1>Khảo sát dịch vụ khách hàng</h1><br>
+
+    <form action="" nethod="get">
+        <label for="age"> Độ tuổi của bạn:</label>
+        <input type="number" id="age" name="age"><br>
+        <fieldset>
+            <legend>Giới tính của bạn là gì?</legend>
+                <form action="">
+                    <input type="radio" id="text" name="text">Nam
+                    <input type="radio" id="text" name="text">Nữ
+                    <input type="radio" id="text" name="text">Khác
+                </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dịch vụ bạn đang quan tâm (có thể chọn nhiều):</legend>
+            <form action="">
+                <input type="checkbox" id="text" name="text">Website
+                <input type="checkbox" id="text" name="text">Mobile App
+                <input type="checkbox" id="text" name="text">Marketing
+            </form>
+        </fieldset>
+        
+        <label for="country">Quốc gia đang sinh sống:</label>
+        <select name="country" id="country">
+            <option name="country" id="country">--Vui lòng chọn -- </option>
+            <option name="country" id="country">Việt Nam </option>
+            <option name="country" id="country">Nhật bản </option>
+            <option name="country" id="country">Hoa kỳ </option>
+        </select><br>
+        
+        <input type="submit" value="Gửi thông tin">
+    </form>
+</body>
+</html>

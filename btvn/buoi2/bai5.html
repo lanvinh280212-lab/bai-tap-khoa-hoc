@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nộp hồ sơ ứng tuyển</title>
+</head>
+<body>
+    <h1>Nộp hồ sơ ứng tuyển</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Thông tin liên hệ</legend>
+            
+            <label for="fullname">Họ và Tên:</label>
+            <input type="text" id="fullname" name="fullname" > <br>
+
+            <label for="phone"> Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0][1-9]{8}"
+                   title="Số ĐT phải bắt đầu bằng 0, chữ số thứ 2 là 1-9 và theo sau là 8 số"
+                   required
+            >
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Hồ sơ đình kèm</legend>
+            <label for="cv-upload">Tải lên CV(định dạng PDF/Word):</label>
+            <input type="file" id="cv-upload" name="cv-upload" accept=".pdf, .docx">
+        </fieldset> <br>
+
+        <button type="submit"> Nộp hồ sơ</button>
+    </form>
+</body>
+</html>

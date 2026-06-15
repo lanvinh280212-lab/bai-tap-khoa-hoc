@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hóa đơn</title>
+</head>
+<body>
+    <h2>Chi tiết hóa đơn Mua hàng</h2>
+    <table>
+        <caption> Hóa đơn điện tử #HD-20260310</caption>
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Chi tiết</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Áo thun Lập trình viên</td>
+                <td>
+                    <ul>
+                        <li>Màu sắc: Đen</li>
+                        <li>Kích cỡ: XL</li>
+                        <li>Chất liệu:Cotton 100%</li>
+                    </ul>
+                </td>
+                <td>250.000đ</td>
+                <td>250.000đ</td>
+            </tr>
+            <tr>
+                <td>Bàn phím cơ bản</td>
+                <td>
+                    <ul>
+                        <li>Switch:Red</li>
+                        <li>Layout:TKL</li>
+                    </ul>
+                </td>
+                <td>800.000đ</td>
+                <td>800.000đ</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="3"> Tổng tiền thanh toán:1.050.000đ</th>
+        </tfoot>
+    </table>
+    <hr>
+
+    <h2>Đánh giá trải nghiệm mua hàng</h2>
+    <form action="">
+        <fieldset>
+            <legend>Phản hồi của bạn</legend>
+            <label for="Star">Mức độ hài lòng:</label>
+            <select name="Star" id="Star">
+                <option name="Star" id="Star" >--Vui lòng chọn số sao--</option>
+                <option name="Star" id="Star" >1 Sao</option>
+                <option name="Star" id="Star"> 2 sao</option>
+                <option name="Star" id="Star">3 sao</option>
+                <option name="Star" id="Star">4 sao</option>
+                <option name="Star" id="Star">5 sao</option>
+            </select><br>
+
+            <label for="notes">Lời nhận xét chi tiết:</label><br>
+            <textarea name="notes" id="notes" placeholder="Hãy chia sẻ trải nghiệm của bạn về sản phẩm và dịch vụ..."></textarea>
+
+        </fieldset>
+    </form> <br>
+
+    <button type="submit">Gửi phản hồi</button>
+
+</body>
+</html>
