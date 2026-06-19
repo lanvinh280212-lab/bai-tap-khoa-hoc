@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân</title>
+    <style>
+        /* --- YÊU CẦU: Cơ chế Fallback font chữ ít nhất 3 tầng (kết thúc bằng sans-serif) --- */
+:root {
+  --main-font: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --accent-color: #1abc9c; /* Màu xanh mint chủ đạo */
+}
+
+.portfolio-hero {
+  background: linear-gradient(
+      rgba(44, 62, 80, 0.85), 
+      rgba(44, 62, 80, 0.85)
+    ), 
+    url('./img/cv.jpg') no-repeat center center;
+  background-size: cover; /* Che phủ toàn màn hình */
+  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--main-font);
+  color: #ffffff;
+}
+
+.content-wrapper {
+  max-width: 800px;
+  padding: 20px;
+}
+.author-name {
+  font-size: 3.5rem; 
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+.author-name::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px; /* Cách tên một khoảng nhỏ */
+  transform: translateX(-50%); /* Căn giữa gạch ngang */
+  width: 80px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+.author-title {
+  font-size: 1.8rem; /* Đơn vị rem cho tiêu đề 2 */
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #ecf0f1;
+}
+
+.author-desc {
+  font-size: 15px; /* Đơn vị px */
+  color: #95a5a6;
+  margin-bottom: 35px;
+}
+
+.highlight-text {
+  font-size: 14px; /* Đơn vị px */
+  color: var(--accent-color);
+  font-weight: bold;
+  letter-spacing: 6px; /* Khoảng cách chữ lớn */
+  margin-bottom: 40px;
+}
+.btn-download {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid var(--accent-color);
+  padding: 12px 35px;
+  font-size: 16px; /* Đơn vị px */
+  border-radius: 4px;
+  transition: all 0.3s ease; /* Làm mượt hiệu ứng hover */
+}
+
+.btn-download:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(26, 188, 156, 0.4); /* Thêm hiệu ứng phát sáng nhẹ cho đẹp */
+}
+    </style>
+</head>
+<body>
+    <section class="portfolio-hero">
+        <div class="content-wrapper">
+            <h1 class="author-name">Nguyễn Thị Lan</h1>
+    
+            <h2 class="author-title">Frontend Developer</h2>
+    
+            <p class="author-desc">
+                Thiết kế trải nghiệm người dùng, sáng tạo giao diện độc đáo, tối ưu hoá tương tác.
+            </p>
+    
+            <p class="highlight-text">SÁNG TẠO ĐỂ DẪN ĐẦU</p>
+    
+            <a href="bai2.html" class="btn-download">Tải CV</a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đột phá</title>
+    <style>
+        .quote-card {
+        background-color: #fcfcfc;
+        max-width: 650px;
+        margin: 40px auto;
+        padding: 40px 50px 30px 60px;
+        border-left: 6px solid #2980b9; /* Viền xanh bên trái */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        font-family: 'Times New Roman', Times, serif;
+        position: relative; /* Để định vị dấu ngoặc kép mở */
+        }
+
+        .quote-content {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #555;
+        font-style: italic; /* Chữ in nghiêng */
+        margin: 0;
+        }
+
+        .quote-card::before {
+        content: "\201C"; /* Mã Unicode của dấu ngoặc kép trái */
+        font-size: 80px;
+        color: #bdc3c7; /* Màu xám nhạt */
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-family: Arial, sans-serif;
+        line-height: 1;
+        }
+        .quote-content::after {
+        content: "\201D"; /* Mã Unicode của dấu ngoặc kép phải */
+        font-size: 50px;
+        color: #bdc3c7;
+        position: relative;
+        top: 15px;
+        left: 5px;
+        font-family: Arial, sans-serif;
+        line-height: 0;
+        }
+        .quote-content::first-letter {
+        font-size: 2.2em; /* To gấp đôi bình thường */
+        color: #2980b9;   /* Màu xanh dương đậm */
+        font-weight: bold;
+        font-style: normal; /* Không in nghiêng chữ này */
+        float: left;        /* Đẩy chữ sang trái để các dòng sau ôm theo */
+        margin-right: 8px;
+        margin-top: 5px;
+        line-height: 0.8;
+        }
+        .author {
+        text-align: right;
+        font-size: 16px;
+        color: #7f8c8d;
+        font-weight: bold;
+        margin-top: 20px;
+        font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote-card">
+        <p class="quote-content">Đột phá không đến từ việc cố gắng tạo ra thứ gì đó lớn lao, mà từ việc liên tục giải quyết
+            các vấn đề nhỏ nhặt xung quanh cuộc sống của bạn. Khi bạn tập trung xây dựng sản phẩm mang lại giá trị thực sự
+            cho người dùng, những điều vĩ đại sẽ tự nhiên theo sau.</p>
+        <p class="author">- Tỷ phú công nghệ -</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .course-box {
+        border: 1px solid #e2e8f0;
+        padding: 25px;
+        max-width: 550px;
+        }
+
+        .course-title + p {
+        font-style: italic; /* In nghiêng */
+        letter-spacing: 1.5px; /* Giãn cách chữ cái */
+        color: #555;
+        margin-bottom: 20px;
+        }
+        .main-list > li {
+        color: #d35400; /* Màu nổi bật (cam đỏ) */
+        font-weight: bold;
+        margin-bottom: 12px;
+        }
+        .main-list > li > ul > li {
+        color: #555;
+        font-weight: normal;
+        margin-top: 8px;
+        }
+
+        .course-box a {
+        text-decoration: none;
+        color: #2980b9; /* Màu xanh link */
+        }
+    </style>
+</head>
+<body>
+    <div class="course-box">
+        <h2 class="course-title">Lộ trình học Lập trình Web Frontend</h2>
+        <p>Bắt đầu hành trình trở thành lập trình viên Frontend chuyên nghiệp với các khóa học dưới đây.</p>
+    
+        <ul class="main-list">
+            <li><a href="#">Nhập môn HTML và CSS</a></li>
+            <li>Lập trình JavaScript cơ bản</li>
+            <li>Lập trình ReactJS (Khóa chính)
+                <ul class="sub-list">
+                    <li>React Router cho điều hướng</li>
+                    <li>Quản lý state với Redux</li>
+                </ul>
+            </li>
+            <li>Xây dựng dự án thực tế</li>
+        </ul>
+    </div>
+</body>
+</html>
