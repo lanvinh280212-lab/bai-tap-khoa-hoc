@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khối</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin:10px;
+            padding:10px;
+        }
+        .container {
+            display:flex;
+            gap:20px;
+            background-color: #f4f4f4;
+            padding:20px;
+            margin-bottom:30px;
+            width:fit-content;
+        }
+        
+        .box {
+            width:150px;
+            height:100px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(201, 37, 37);
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+        .bg-green {
+            background-color: #2ecc71;
+        }
+
+        .bg-purple {
+            background-color: #9b59b6;
+        }
+        .hide-display {
+            display: none;
+        }
+
+        
+        .hide-visibility {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box bg-green"> Sản phẩm 1</div>
+        <div class="box hide-display"> Sản phẩm 2</div>
+        <div class="box bg-purple"> Sản phẩm 3</div>
+    </div>
+    <div class="container">
+        <div class="box bg-green"> Sản phẩm 4</div>
+        <div class="box hide-visibility"> Sản phẩm 5</div>
+        <div class="box bg-purple"> Sản phẩm 6</div>
+    </div>
+</body>
+</html>
