@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu cửa hàng</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid #ccc;
+            flex-direction: column;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .bannar {
+            text-align: justify;
+            padding:5px 20px 5px;
+            font-size: 30px;
+        }
+        .text {
+            text-indent: 3em;
+            margin-top: 0;
+        }
+        @media (min-width:768px ) {
+            .box {
+                flex-direction: row;
+                align-items: center;
+                gap:20px;
+            }
+            img {
+                flex:0 0 40%;
+                max-width: 40%;
+            }
+            .text {
+                flex: 0 0 60%;
+                max-width:60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./img/anh-gt.jpg" alt="Giới thiệu cửa hàng">
+        <div class="bannar">
+            <h2 class="tilte">Giới thiệu cửa hàng</h2>
+            <p class="text"> Chào mừng bạn đến với hệ thống cửa hàng công nghệ hiện đại nhất.
+                Chúng tôi cung cấp đa dạng các thiết bị điện tử , từ máy tính , laptop đến điện thoại , phụ kiện thông minh.
+                Mọi sản phẩm đều được cam kết chính hãng 100% , bảo hành uy tín và dịch vụ chăm sóc khách hàng tận tâmk nhất. <br>
+                Hãy cùng khám phá các sản phẩm tuyệt vời của nhà hàng trăm thương hiệu được trưng bày tại TechStore.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

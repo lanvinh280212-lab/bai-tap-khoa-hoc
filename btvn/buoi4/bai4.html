@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web TechZone</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: rgb(32, 11, 164);
+            padding: 20px 40px;
+            color: white;
+        }
+        .logo {
+            float:left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            float:right;
+           list-style: none;
+           margin-top: 3px;
+        }
+        .nav li {
+            float:left;
+            margin-left: 25px;
+        }
+        .nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px ;
+        }
+        .nav a:hover {
+            color:aqua;
+        }
+        .clear {
+            clear: both;
+        }
+        .content {
+            padding: 40px;
+            background-color:rgb(236, 239, 241);
+            border: 1px solid #ddd;
+            min-height: 250px;
+        }
+        .content h1 {
+            color: black;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .content p {
+            color: black;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+   <header >
+        <div class=" logo">TechZone</div>
+        <ul class="nav">
+            <li><a href="">Trang chủ</a> </li>
+            <li><a href="">Sản phẩm</a></li>
+            <li><a href="">Liên hệ</a></li>
+        </ul>
+        
+        <div class="clear"></div>
+   </header>
+   <main class="content">
+        <h1> Chào mừng bạn đến với TechZone!</h1>
+        <p>Đây là nội dung trang web không bị tràn lên phần Header phía trên nhờ kỹ thuật clear float</p>
+   </main>
+</body>
+</html>

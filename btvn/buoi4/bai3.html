@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(176, 176, 176);
+            padding: 10px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin:0 auto;
+            text-align: center;
+        }
+        .card-tilte {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color:black;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color:white;
+        } 
+        .box-card {
+            width:33.33%;
+            padding:30px 20px;
+            border: 1px solid rgb(202, 200, 200);
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-between;
+        }
+        .box-card:nth-child(2) {
+            border-left: none;
+            border-right: none;
+        }
+        .card-tilte {
+            font-size: 16px;
+            color:black;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-size: 13px;
+            color:gray;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .card-buy {
+            font-size: 14px;
+            color:red;
+            margin-bottom: 20px;
+            font-weight: bold;
+            margin-top: auto;
+        }
+        .submit {
+            margin-top: auto;
+            background-color: blue;
+            width:100px;
+            height:40px;
+        }
+        .submit:hover {
+            background-color: rgb(10, 181, 243);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="container-tilte">Danh Sách Sản Phẩm Nổi Bật</h2><br>
+        <div class="box-container">
+            <div class="box-card">
+                <h3 class="card-tilte">Laptop Gaming Cao Cấp</h3>
+                <p class="card-text">Hiệu năng vượt trội, màn hình 144Hz cho trải nghiệm chơi game mượt mà</p>
+                <p class="card-buy">25.000.000 VNĐ</p>
+                <button class="submit">Mua ngay</button>
+            </div>
+            <div class="box-card">
+                <h3 class="card-tilte">Điện Thoại Chụp Ảnh Khủng</h3>
+                <p class="card-text">Camera 108MP, pin trâu 6000mAh, sạc nhanh 65W</p>
+                <p class="card-buy">12.500.000 VNĐ</p>
+                <button class="submit">Mua ngay</button>
+            </div>
+            <div class="box-card">
+                <h3 class="card-tilte">Tai Nghe Chống Ồn Chủ Động</h3>
+                <p class="card-text">Cách âm tuyệt đối, âm thanh vòm 360 độ, nghe nhạc cực đã</p>
+                <p class="card-buy">4.200.000 VNĐ</p>
+                <button class="submit">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
