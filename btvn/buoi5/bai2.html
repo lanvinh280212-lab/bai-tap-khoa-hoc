@@ -10,58 +10,77 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-    
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .bannar {
-            text-align: justify;
-            padding: 5px 20px 5px;
             font-size: 30px;
         }
-
-        .text {
-            text-indent: 3em;
-            margin-top: 0;
+        .project {
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            gap:20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding:20px;
         }
-
-        
+        .project-card {
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            gap:20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding:20px;
+        }
+        .project-img {
+            flex:1;
+        }
+        .project-img img {
+            width:100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .project-info {
+            flex:1;
+        }
+        .project-card.layout {
+          flex-direction: row-reverse;
+        }
     </style>
 </head>
 
 <body>
-    <div class="box">
-        <h2>Các dự án nổi bật</h2>
-        <div class="div-1">
-            <img src="./img/anh1.jpg" alt="Giới thiệu cửa hàng">
-            <div class="bannar">
-                <h3 class="tilte">Dự án Web App E-commerce</h3>
-                <p class="text">
-                    Hệ thống quản lý bán hàng toàn diện, tích hợp thanh toán trực tuyến, giỏ hàng minh bạch và quản lý kho thông minh . 
-                    Ứng dụng xây dụng trên React , đem lại tốc độ nhanh và trải nghiệm mượt mà.
+   <section class="project">
+       <h2>Các dự án nổi bật</h2>
+       <div class="project-card">
+            <div class="project-img">
+                <img src="./img/anh1.jpg" alt="Giới thiệu cửa hàng">
+            </div>
+            <div class="project-info">
+                <h3>Dự án Web App E-Commerce</h3>
+                <p>
+                Hệ thống quản lý bán hàng toàn diện, tích hợp thanh toán trực tuyến, giỏ hàng minh bạch và quản lý kho
+                thông
+                minh .
+                Ứng dụng xây dụng trên React , đem lại tốc độ nhanh và trải nghiệm mượt mà.
                 </p>
             </div>
         </div>
-        <div class="div-2">
-            <img src="./img/anh2.jpg" alt="Giới thiệu cửa hàng">
-            <div class="bannar">
-                <h3 class="tilte">Dự án Data Dashbroad</h3>
-                <p class="text"> 
-                    Bbangr điều khiển phân tích dữ liệu trực quan cho doanh nghiệp.
-                    CHo phép người dùng tùy chỉnh báo cáo, thống kê doanh thu theo thời gian thực với biểu đồ tương tác 3D mạnh mẽ.
+        <div class="project-card layout">
+            <div class="project-img">
+                <img src="./img/anh2.jpg" alt="Giới thiệu cửa hàng">
+            </div>
+            <div class="project-info">
+                <h3>Dự án Data Dashbroad</h3>
+                <p>
+                Bảng điều khiển phân tích dữ liệu trực quan cho doanh nghiệp.
+                Cho phép người dùng tùy chỉnh báo cáo, thống kê doanh thu theo thời gian thực với biểu đồ tương tác 3D
+                mạnh
+                mẽ.
                 </p>
             </div>
-        </div>
-    </div>
+        </div>   
+   </section>
 </body>
 
 </html>

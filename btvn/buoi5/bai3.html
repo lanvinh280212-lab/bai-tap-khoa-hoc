@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng dịch vụ</title>
+    <style>
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: #f5f7f9;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        .pricing-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 40px 25px;
+            width: 280px;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+            /* Tạo hiệu ứng mượt mà khi hover */
+        }
+
+        .pricing-card:hover {
+            border-color: #3498db;
+            /* Đổi viền sang màu xanh */
+        }
+
+        .pricing-card:hover .plan-name {
+            font-weight: 900;
+            /* Làm tên gói đậm lên */
+        }
+
+        .pricing-card:nth-child(2) {
+            background-color: #eaf4fc;
+            /* Đổ màu nền xanh nhạt */
+            border: 2px solid #3498db;
+            /* Viền xanh đậm và dày hơn */
+            padding: 55px 25px;
+        }
+
+        .pricing-card:nth-child(2) .plan-name {
+            color: #1f618d;
+        }
+
+        .pricing-card:nth-child(2) .select-btn {
+            background-color: #2980b9;
+        }
+        .plan-name {
+            font-size: 20px;
+            color: #555;
+            font-weight: normal;
+            margin-bottom: 15px;
+            transition: font-weight 0.2s ease;
+        }
+
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .price span {
+            font-size: 14px;
+            color: #888;
+            font-weight: normal;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+
+        .features li {
+            font-size: 14px;
+            color: #666;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+          
+        }
+
+        .features li:last-child {
+            border-bottom: none;
+            
+        }
+
+        .select-btn {
+            background-color: #4facfe;
+            color: #ffffff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .select-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pricing-container">
+
+        <div class="pricing-card">
+            <h3 class="plan-name"> Cơ Bản</h3>
+            <div class="price"><strong>Miễn Phí</strong></div>
+            <ul class="features">
+                <li>1 Dự Án</li>
+                <li>100MB Lưu trữ</li>
+                <li>Hỗ trợ Email</li>
+            </ul>
+            <button class="select-btn">Bắt Đầu Ngay</button>
+        </div>
+
+        <div class="pricing-card">
+            <h3 class="plan-name"> Chuyên Nghiệp</h3>
+            <div class="price">99.000đ<span>/tháng</span></div>
+            <ul class="features">
+                <li>Dự án không giới hạn</li>
+                <li>10GB Lưu trữ</li>
+                <li>Hỗ trợ 24/7</li>
+                <li>Domain Tùy chỉnh</li>
+            </ul>
+            <button class="select-btn">Nâng Cấp</button>
+        </div>
+
+        <div class="pricing-card">
+            <h3 class="plan-name"> Doanh Nghiệp</h3>
+            <div class="price"><strong>Liên Hệ</strong></div>
+            <ul class="features">
+                <li>Gói tùy chọn đầy đủ</li>
+                <li>Dung lượng cao nhất</li>
+                <li>Tư vấn riêng biệt</li>
+            </ul>
+            <button class="select-btn">Tìm hiểu thêm</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đội ngũ phát triển</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 50px 20px;
+            background-color: #f0f2f5;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+            font-size: 24px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            flex: 1 1 300px;
+            max-width: 350px; 
+            border-top: 5px solid #1fdec2;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .avtar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px auto;
+            background-color: #e2e8f0;
+
+        }
+
+        .card h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .card h4 {
+            color: #1fdec2;
+            font-size: 12px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Đội Ngũ Phát Triển</h2>
+        <div class="content">
+            <div class="card">
+                <img src="./img/anh1.jpg" alt="Trần Tuấn Anh" class="avtar">
+                <h3>Trần Tuấn Anh</h3>
+                <h4>Frontend Developer</h4>
+                <p>Chuyên gia về ReactJS và UI/UX với hơn 5 năm kinh nghiệm. Đam mê thiết kế các giao diện người dùng
+                    hiện đại và hiệu suất cao.</p>
+            </div>
+
+            <div class="card">
+                <img src="./img/anh2.jpg" alt="Nguyễn Ngọc Mai" class="avtar">
+                <h3>Nguyễn Ngọc Mai</h3>
+                <h4>Project Manager</h4>
+                <p>Điều phối viên dự án tài ba, quản lý rủi ro và điều hướng team vượt qua những thử thách công nghệ
+                    phức tạp mỗi ngày.</p>
+            </div>
+
+            <div class="card">
+                <img src="./img/anh3.jpg" alt="Lê Bá Khánh" class="avtar">
+                <h3>Lê Bá Khánh</h3>
+                <h4>Backend Engineer</h4>
+                <p>Xây dựng hệ thống Data phức tạp và kiến trúc Microservices. Node.js và AWS là bạn đồng hành không thể
+                    thiếu.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

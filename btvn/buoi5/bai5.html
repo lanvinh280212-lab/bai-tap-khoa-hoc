@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Răng</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 900px;
+            background-color: rgb(176, 242, 242);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .project {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            background-color: rgb(7, 182, 246);
+            color: aliceblue;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .project h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .project p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .project-tilte {
+            list-style: none;
+        }
+
+        .project-tilte li {
+            font-size: 16px;
+            /* Chỉnh nhỏ lại một chút cho cân đối với form */
+            margin-bottom: 16px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .project-tilte li::before {
+            content: "•";
+            /* Thêm dấu chấm ảo thay thế list-style */
+            position: absolute;
+            left: 0;
+            color: white;
+        }
+
+        .project-form {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 0 10px 10px 0;
+            /* Bo góc bên phải cho bản PC */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .project-form h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            /* Đã bật lại thuộc tính này */
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            outline: none;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive cho thiết bị di động */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .project-form {
+                order: -1;
+                border-radius: 10px 10px 0 0;
+                /* Đổi lại góc bo khi form nhảy lên trên */
+            }
+
+            .project {
+                order: 1;
+                border-radius: 0 0 10px 10px;
+                /* Đổi lại góc bo cho cột thông tin ở dưới */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="project">
+            <h2>Nha Khoa Smile Care</h2>
+            <p>Nụ cười tự tin là chìa khóa mở ra những cơ hội mới. Chúng tôi cam kết mang lại trải nghiệm chăm sóc răng
+                miệng không đau với công nghệ tiên tiến nhất đến từ châu Âu.</p>
+            <ul class="project-tilte">
+                <li>Đội ngũ bác sĩ chuyên khoa hơn 10 năm kinh nghiệm</li>
+                <li>Trang thiết bị X-Quang 3D hiện đại nhất</li>
+                <li>Vô trùng tuyệt đối theo tiêu chuẩn quốc tế</li>
+                <li>Bảo hành trọn đời dịch vụ Răng sứ</li>
+            </ul>
+        </div>
+
+        <div class="project-form">
+            <h3>Đặt lịch khám Ngay</h3>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Họ Và Tên</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Nhập tên của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số Điện Thoại</label>
+                    <input type="tel" id="tel" name="tel" class="form-control" placeholder="Nhập số điện thoại liên hệ">
+                </div>
+                <div class="form-group">
+                    <label for="service">Dịch vụ tư vấn</label>
+                    <select class="form-control" name="service" id="service">
+                        <option value="kham-tong-quat">Khám tổng quát</option>
+                        <option value="lay-cao-rang">Lấy cao răng</option>
+                        <option value="kham-va-lay-cao-rang">Khám tổng quát & lấy cao răng</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Xác nhận đặt lịch</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
