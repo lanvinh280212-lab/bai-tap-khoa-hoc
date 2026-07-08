@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2 - Form Tìm Kiếm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200 p-10">
+
+    <div class="max-w-4xl mx-auto flex justify-center">
+        <div class="w-full bg-white p-6 rounded-lg shadow-md">
+
+            <form class="flex flex-col md:flex-row gap-4 items-end w-full">
+
+                <div class="w-full md:w-[40%]">
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Điểm đến</label>
+                    <input type="text" placeholder="Bạn muốn đi đâu?"
+                        class="w-full border border-gray-300 p-2.5 rounded text-sm focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div class="w-full md:w-[40%]">
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Ngày đi</label>
+                    <input type="date"
+                        class="w-full border border-gray-300 p-2.5 rounded text-sm focus:outline-none focus:border-blue-500 text-gray-500">
+                </div>
+
+                <div class="w-full md:w-[20%]">
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white font-bold py-2.5 px-4 rounded hover:bg-blue-700 transition">
+                        Tìm kiếm
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
