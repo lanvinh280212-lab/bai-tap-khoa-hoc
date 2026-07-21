@@ -1,6 +1,6 @@
 let chuyenCan = 85;
 let diemTB = 6.0;
-let giayPhep = flase;
+let giayPhep = false;
 let dieuKienHocLuc = (chuyenCan > 80 && diemTB >=5);
 if (dieuKienHocLuc) {
     console.log("Đạt điều kiện về điểm và chuyên cần");
